@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <nav class="site-nav grid">
+      <h1 id="demo" onmousedown="onmousedown1()" onmouseup="onmouseup1()">Rohit Baddi</h1>
+      <ul>
+        <li><a href="#certificate">certificate</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="welcome" class="grid">
+      <div class="welcome-text">
+        <h2>Frontend Developer</h2>
+        <p class="leading">BLDEA'S VP DR P G HALAKATTI COLLEGE OF ENGINEERING AND TECHNOLOGY BIJAPUR</p>
+        <a href="#" class="button">Resume</a>
+      </div>
+      <div class="welcome-img">
+        <img src="https://i.ibb.co/kxPxsrv/trou-noir.png" alt="pic of planet">
+      </div>
+    </section>
+    <section id="certificate">
+      <h3>CERTIFICATES</h3>
+      <div class="my_card">
+        <div class="my_card_img">
+          <img src="google certificate.png" alt="DATA ANALYTIC" class="my_card_img">
+          <h4>DATA ANALYTIC</h4>
+      </div>
+      </div>
+    </section>
+    <section id="skills">
+      <h3>Things I Can Do</h3>
+      <ul class="grid">
+        <li>
+          <img src="https://i.ibb.co/hXvFQTy/meteor2647400.png" alt="comet">
+          <h4>HTML</h4>
+        </li>
+        <li>
+          <img src="https://i.ibb.co/zJ69DMc/comet2534248.png" alt="comet">
+          <h4>CSS</h4>
+        </li>
+        <li>
+          <img src="https://i.ibb.co/0Y20t0c/comet2909923.png" alt="comet">
+          <h4>JAVA</h4>
+        </li>
+        <li>
+          <img src="https://i.ibb.co/c1nBk03/meteor.png" alt="comet">
+          <h4>PYTHON</h4>
+        </li>
+      </ul>
+      
+    </section>
+    <div class="div">
+    <section id="contact">
+      <h1 class="form_control">Get In Touch</h1>
+      <form action="main.php" method="post" class="form_control" onreset="onreset1()"
+      onsubmit="return validateForm()" 
+      >
+        <label for="Name" id="Name">Enter Name :</label>
+        <input type="text" id="name" name="Name"  onfocus="onfocus1(this)" onblur="onblur1(this)" />
+        <br />
+        <label for="usn" id="usn"> Enter USN : </label>
+        <input type="text" name="USN" id="usn" onfocus="onfocus1(this)"  onblur="onblur1(this)" onselect="onselect1()"/>
+        <br />
+        <label for="cars">Choose Branch :</label>
+        <select name="branch" id="branch" onfocus="onfocus1(this)"  onblur="onblur1(this)" >
+          <option value="CSE">CSE</option>
+          <option value="ISE">ISE</option>
+          <option value="AIML">AIML</option>
+          <option value="CIVIL">CIVIL</option>
+          <option value="ECE">ECE</option>
+          <option value="MECH">MECH</option>
+          <option value="EEE">EEE</option>
+        </select>
+        <br />
+        <label for="Gender">Gender :</label>
+        <input type="radio" id="male" name="Gender" value="Male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="Gender" value="female" />
+        <label for="female">Female</label>
+        <br>
+        <label for="email" id="email"> Enter Email: </label>
+        <input type="email" name="Email" id="email"  onfocus="onfocus1(this)"  />
+        <br />
+        <label for="mobile" id="mobile"> Enter Mobile : </label>
+        <input type="tel" name="Mobile" id="mobile"  onfocus="onfocus1(this)"  onblur="onblur1(this)"/>
+        <br>
+        <label for="file" id="file">Upload File : </label>
+        <input type="file" name="file"/>
+        <br>
+        <br>
+        <input type="submit" class="button" name="submit">
+        <input type="reset" class="button" >
+  
+      </form>
+    </section>
+  </div>
+    <footer>
+      <div class="grid">
+        <p class="copyright"></p>
+        <ul class="social">
+          <li><a href="#"><img src="https://raw.githubusercontent.com/iamshaunjp/responsive-css-grid-build/847f0a24fecf4aba7cd205a09b7a52b7924766cf/assets/icon_fb.svg" alt="facebook"></a></li>
+          <li><a href="#"><img src="https://raw.githubusercontent.com/iamshaunjp/responsive-css-grid-build/847f0a24fecf4aba7cd205a09b7a52b7924766cf/assets/icon_tw.svg" alt="twitter"></a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  </html>
+</html>
